@@ -4,7 +4,7 @@ import Options from "../Options/Options"
 import Feedback from "../Feedback/Feedback"
 import Notification from "../Notification/Notification"
 
-function App() {
+export default function App() {
     const [options, setOption] = useState(() =>
     {
         const savedFeedback = localStorage.getItem('feedback');
@@ -50,4 +50,3 @@ function App() {
     
 }
 
-export default App
