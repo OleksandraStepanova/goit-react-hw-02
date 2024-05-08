@@ -8,7 +8,7 @@ export default function App() {
     const [options, setOption] = useState(() =>
     {
         const savedFeedback = localStorage.getItem('feedback');
-        if (savedFeedback !== 0) {
+        if (savedFeedback !== null) {
             return JSON.parse(savedFeedback);
         }
         
